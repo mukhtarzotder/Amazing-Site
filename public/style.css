@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+.p{
+    letter-spacing: 4px;
+    font-size: 2em;
+    font-style: italic;
+    position: relative;
+    color: #fff;
+    text-transform: capitalize;
+    background: linear-gradient(90deg,#000,#fff,#000);
+    /* background-size: 80%; */
+    animation: animate 3s linear infinite;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    overflow: hidden;
+}
+@keyframes animate{
+    0%{
+        background-position: -500px;
+    }
+    100%{
+       background-position: 500px;
+    }
+}
